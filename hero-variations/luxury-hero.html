@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Graphic Novels - Luxury Hero</title>
+    <link rel="stylesheet" href="luxury-hero.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <span class="loader-text">Loading Magic</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="luxury-header">
+        <nav class="main-nav">
+            <div class="logo-center">
+                <a href="#" class="logo-link">CGN</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Background Layer (Fixed) -->
+        <div class="hero-background">
+            <img src="../images/hero-back image.png" alt="" class="hero-back-image" id="heroBack">
+        </div>
+        
+        <!-- Hero Content Wrapper (Scrolls) -->
+        <div class="hero-wrapper">
+            <!-- Foreground Layer -->
+            <div class="hero-foreground">
+                <img src="../images/hero-front image.png" alt="" class="hero-front-image" id="heroFront">
+            </div>
+
+            <!-- Text Content -->
+        <div class="hero-content">
+            <!-- Circular Text with Title Inside -->
+            <div class="circular-text-container" id="circularContainer">
+                <!-- Crown Asset Above Title -->
+                <div class="crown-asset crown-top">
+                    <img src="../images/Hero-page crown assets.png" alt="" class="crown-image">
+                </div>
+                
+                <!-- Main Title in Center -->
+                <h1 class="hero-title" id="heroTitle">
+                    UNTOLD TALES AWAIT.
+                </h1>
+                
+                <!-- Crown Asset Below Title (Flipped) -->
+                <div class="crown-asset crown-bottom">
+                    <img src="../images/Hero-page crown assets.png" alt="" class="crown-image">
+                </div>
+                
+                <!-- Circular Text -->
+                <svg class="circular-text" viewBox="0 0 350 350">
+                    <defs>
+                        <path id="circle" d="M 175, 175 m -150, 0 a 150,150 0 1,1 300,0 a 150,150 0 1,1 -300,0"></path>
+                    </defs>
+                    <text>
+                        <textPath href="#circle" class="circular-text-path">
+                            CUSTOM GRAPHIC NOVELS • CUSTOM GRAPHIC NOVELS • 
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Email Capture Bottom Bar -->
+    <div class="email-capture-bar" id="emailCaptureBar">
+        <div class="email-capture-content">
+            <div class="email-capture-text">
+                <div class="email-capture-title-row">
+                    <span class="email-capture-title">Preserve Your Legacy</span>
+                    <a href="https://www.instagram.com/customgraphicnovels/" class="instagram-icon-link" target="_blank" rel="noopener noreferrer">
+                        <svg class="instagram-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+                <span class="email-capture-subtitle">Be notified when commissions open</span>
+            </div>
+            <form class="email-capture-form" id="emailCaptureForm" action="https://formspree.io/f/xrbkabwo" method="POST">
+                <input type="email" name="email" class="email-capture-input" placeholder="Enter your email" required>
+                <input type="hidden" name="_subject" value="New Email Signup - Custom Graphic Novels">
+                <input type="hidden" name="_next" value="thank-you">
+                <button type="submit" class="email-capture-button">
+                    <span class="button-text">Join</span>
+                    <span class="loading-text">Sending...</span>
+                </button>
+            </form>
+            <button class="email-capture-close" id="emailCaptureClose">&times;</button>
+        </div>
+    </div>
+
+    <script src="luxury-hero.js"></script>
+</body>
+</html>
